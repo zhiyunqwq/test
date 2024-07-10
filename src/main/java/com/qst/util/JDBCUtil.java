@@ -28,6 +28,8 @@ public class JDBCUtil {
 
     public static void close(Connection conn, Statement statement, ResultSet rs) {
         if(conn!=null){
+
+            
             try {
                 conn.close();
             } catch (SQLException throwables) {
