@@ -5,9 +5,9 @@ import java.sql.*;
 public class JDBCUtil {
 
     /*1. 数据库链接信息*/
- private static   String url = "jdbc:mysql://localhost:3306/exam?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
- private static   String userName = "root";
- private static   String password = "root";
+    private static String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
+    private static String userName = "root";
+    private static String password = "root";
 
     /*2. 加载数据库驱动*/
     static{
@@ -28,8 +28,6 @@ public class JDBCUtil {
 
     public static void close(Connection conn, Statement statement, ResultSet rs) {
         if(conn!=null){
-
-            
             try {
                 conn.close();
             } catch (SQLException throwables) {

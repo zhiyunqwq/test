@@ -18,4 +18,5 @@ public interface IUserDao {
     /*定义操作的方方查询所有数据*/
     List<User> selectAll();
 
+    User selectOneByUserName(String username);
 }

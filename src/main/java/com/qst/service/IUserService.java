@@ -17,4 +17,5 @@ public interface IUserService {
     User findOne(Long id);
 
 
+    User findOneByUsername(String username);
 }

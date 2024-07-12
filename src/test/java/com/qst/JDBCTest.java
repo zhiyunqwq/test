@@ -21,7 +21,7 @@ public class JDBCTest {
             /*1.贾： 加载驱动*/
             com.mysql.cj.jdbc.Driver.class.newInstance();
             /*2.连： 建立链接,*/
-            String url = "jdbc:mysql://localhost:3306/exam?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
+            String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
             String userName = "root";
             String password = "root";
             Connection conn = DriverManager.getConnection(url, userName, password);
@@ -51,7 +51,7 @@ public class JDBCTest {
         /*1.贾： 加载驱动*/
         com.mysql.cj.jdbc.Driver.class.newInstance();
         /*2.连： 建立链接,*/
-        String url = "jdbc:mysql://localhost:3306/exam?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
+        String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
         String userName = "root";
         String password = "root";
         Connection conn = DriverManager.getConnection(url, userName, password);
@@ -77,7 +77,7 @@ public class JDBCTest {
         /*1.贾： 加载驱动*/
         com.mysql.cj.jdbc.Driver.class.newInstance();
         /*2.连： 建立链接,*/
-        String url = "jdbc:mysql://localhost:3306/exam?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
+        String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
         String userName = "root";
         String password = "root";
         Connection conn = DriverManager.getConnection(url, userName, password);
@@ -102,7 +102,7 @@ public class JDBCTest {
         /*1.贾： 加载驱动*/
         com.mysql.cj.jdbc.Driver.class.newInstance();
         /*2.连： 建立链接,*/
-        String url = "jdbc:mysql://localhost:3306/exam?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
+        String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
         String userName = "root";
         String password = "root";
         Connection conn = DriverManager.getConnection(url, userName, password);
@@ -139,7 +139,7 @@ public class JDBCTest {
         /*1.贾： 加载驱动*/
         com.mysql.cj.jdbc.Driver.class.newInstance();
         /*2.连： 建立链接,*/
-        String url = "jdbc:mysql://localhost:3306/exam?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
+        String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true";
         String userName = "root";
         String password = "root";
         Connection conn = DriverManager.getConnection(url, userName, password);

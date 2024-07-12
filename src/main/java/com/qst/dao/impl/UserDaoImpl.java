@@ -134,6 +134,37 @@ public class UserDaoImpl implements IUserDao {
         return list;
     }
 
+    @Override
+    public User selectOneByUserName(String username) {
+        Connection conn = null;
+        PreparedStatement statement=null;
+        ResultSet rs = null;
+        User user=null;
+        try {
+            conn = JDBCUtil.getConnection();
+            /*3.预：获得sql预编译对象*/
+            /*sql*/
+            String sql = "select * from user where username = ?";
+
+            statement = conn.prepareStatement(sql);
+            /*4.执行sql语句*/
+            statement.setString(1,username);
+
+
+            rs = statement.executeQuery();//结果集对象长什么样子
+
+            if(rs.next()){//一条数据
+                user = createUser(rs);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        /*5.释放资源*/
+        JDBCUtil.close(conn,statement,rs);
+        return user;
+    }
+
     private User createUser(ResultSet rs) throws SQLException {
         long uId = rs.getLong(1);
         String username = rs.getString(2);

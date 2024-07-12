@@ -56,4 +56,9 @@ public class UserServiceImpl implements IUserService {
         }
         return user;
     }
+
+    @Override
+    public User findOneByUsername(String username) {
+        return userDao.selectOneByUserName(username);
+    }
 }

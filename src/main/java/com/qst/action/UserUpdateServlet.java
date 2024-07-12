@@ -17,8 +17,6 @@ public class UserUpdateServlet extends HttpServlet {
     private IUserService userService = new UserServiceImpl();
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        /*设置编码*/
-        req.setCharacterEncoding("utf-8");
         /*获取请求参数*/
         String id = req.getParameter("id");
         String username = req.getParameter("username");
@@ -29,6 +27,7 @@ public class UserUpdateServlet extends HttpServlet {
         /*调用业务层代码，更新*/
         userService.edit(user);
         /*重新查询展示数据，跳转到/user/list  回到userlist.jsp展示数据*/
-        resp.sendRedirect("/user/list");
+        //resp.sendRedirect("/user/list");
+        req.getRequestDispatcher("/user/list").forward(req,resp);
     }
 }

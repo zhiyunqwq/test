@@ -26,7 +26,7 @@
         </tr>
     </c:forEach>
     <tr align="right">
-        <td colspan="6"><a href="/user/list">查询</a>&emsp;<a href="/useradd.jsp">添加</a></td>
+        <td colspan="6"><a href="/user/list">查询</a>&emsp;<a href="/useradd.jsp">添加</a> <a href="/loginout">退出登录</a></td>
     </tr>
 </table>
 </body>
